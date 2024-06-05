@@ -18,10 +18,11 @@ body {
 main {
     background: #365062;
     min-height: 100vh;
+    min-width: 100vw;
     display: grid;
     place-content: center;
     gap: 2.4rem;
-    padding: 3rem;
+    padding: 1rem;
 }
 
 section {
@@ -30,9 +31,10 @@ section {
 }
     
 .temperature-now {
-    width: 40rem;
-    height: 60vh;
+    width: 30rem;
+    height: 50rem;
     position: relative;
+    align-items: center;
     display: grid;
     grid-template-rows: max-content 1fr max-content;
 }
@@ -40,11 +42,11 @@ section {
 .temperature-now::before {
     content: "";
     width: 18rem;
-    height: 20rem;
+    height: 15rem;
     background: url(./assets/clouds.svg) no-repeat;
     position: absolute;
     top: -1.6rem;
-    left:22rem;
+    left:17rem;
 }
 
 .temperature-now .location input{
@@ -53,7 +55,7 @@ section {
 
 .location {
     justify-self: end;
-    padding: 2.5rem 2.5rem 0;    
+    padding: 1rem 1rem 0;    
     align-items: center;
     
     font-weight: 700;
@@ -79,8 +81,8 @@ section {
 
 .temp {
     margin: auto;
-    padding: 0 0 8rem 0;
-    width: 100%;
+    padding: 0 0 1rem 0;
+    width: 95%;
     font-weight: 700;
     display: flex;
     flex-direction: column;
@@ -101,14 +103,14 @@ section {
 
 .temp .number{
     text-align: center;
-    font-size:8.8rem;
+    font-size:4rem;
     color:#FFFFFF;
     gap: 0.4rem;
 }
 
 .description{
     color: white;
-    font-size: 4rem;
+    font-size: 2rem;
     margin: auto;
     text-align: center;
 }
@@ -116,7 +118,8 @@ section {
 /*Relógio*/
 
 .container-clock{
-    padding: 4rem;
+    padding: 2rem;
+    max-width: 30rem;
     display: block;
     background:white;
 }
@@ -124,7 +127,7 @@ section {
 .clock{
     display:flex;
     gap: 0.4rem;
-    font-size: 6rem;
+    font-size: 4rem;
     justify-content: center;
     align-items: center;
     color: #507189;
@@ -132,7 +135,7 @@ section {
 .date{
     display:flex;
     gap: 0.4rem;
-    font-size: 3rem;
+    font-size: 2rem;
     justify-content: center;
     align-items: center;
     color: #507189;
