@@ -21,7 +21,7 @@ main {
     min-width: 100vw;
     display: grid;
     place-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 section {
@@ -30,7 +30,7 @@ section {
 }
     
 .temperature-now {
-    max-width: 30rem;
+    max-width: 50%;
     height: 50rem;
     position: relative;
     align-items: center;
@@ -40,7 +40,7 @@ section {
 
 .temperature-now::before {
     content: "";
-    width: 18rem;
+    width: 15rem;
     height: 15rem;
     background: url(./assets/clouds.svg) no-repeat;
     position: absolute;
@@ -63,9 +63,9 @@ section {
 }
 
 .location>div{
-    margin-right: 13rem;
-    padding: 2rem;
-    font-size: 3rem;
+    margin-right: 10rem;
+    padding: 1rem;
+    font-size: 2rem;
 }
 
 .location button{
@@ -102,7 +102,7 @@ section {
 
 .temp .number{
     text-align: center;
-    font-size:3rem;
+    font-size: 2rem;
     color:#FFFFFF;
     gap: 0.4rem;
 }
@@ -118,7 +118,7 @@ section {
 
 .container-clock{
     padding: 1rem;
-    max-width: 30rem;
+    max-width: 29rem;
     display: block;
     background:white;
 }
@@ -126,7 +126,7 @@ section {
 .clock{
     display:flex;
     gap: 0.4rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
     justify-content: center;
     align-items: center;
     color: #507189;
