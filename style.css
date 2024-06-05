@@ -21,8 +21,7 @@ main {
     min-width: 100vw;
     display: grid;
     place-content: center;
-    gap: 2.4rem;
-    padding: 1rem;
+    gap: 2rem;
 }
 
 section {
@@ -31,7 +30,7 @@ section {
 }
     
 .temperature-now {
-    width: 30rem;
+    max-width: 30rem;
     height: 50rem;
     position: relative;
     align-items: center;
@@ -82,7 +81,7 @@ section {
 .temp {
     margin: auto;
     padding: 0 0 1rem 0;
-    width: 95%;
+    width: 100%;
     font-weight: 700;
     display: flex;
     flex-direction: column;
@@ -96,14 +95,14 @@ section {
 }
 
 .temp .location {
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
     margin: auto;
 }
 
 .temp .number{
     text-align: center;
-    font-size:4rem;
+    font-size:3rem;
     color:#FFFFFF;
     gap: 0.4rem;
 }
@@ -118,7 +117,7 @@ section {
 /*Relógio*/
 
 .container-clock{
-    padding: 2rem;
+    padding: 1rem;
     max-width: 30rem;
     display: block;
     background:white;
@@ -127,7 +126,7 @@ section {
 .clock{
     display:flex;
     gap: 0.4rem;
-    font-size: 4rem;
+    font-size: 2rem;
     justify-content: center;
     align-items: center;
     color: #507189;
