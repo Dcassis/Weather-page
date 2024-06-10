@@ -1,5 +1,7 @@
 import requests
 
+from translate import Translator
+
 API_KEY = "61abe2de00cb61a5e27c15dfc824dc67"
 
 cidade = "Brasília"
@@ -15,18 +17,14 @@ humidade = requisicao_dic['main']['humidity']
 
 
 print(f'{cidade} está com {descricao}, a temperatura nesse momento é de {temperatura:.1f} °C, com {humidade}% de humidade relativa do ar.')
+link = "https://api.kanye.rest"
+requisicao = requests.get(link)
+requisicao_dic = requisicao.json()
+frase = requisicao_dic['quote']
 
-# # Verifica se existem resultados
-# if 'results' in dados_json and len(dados_json['results']) > 0:
-#     resultado = dados_json['results'][0]  # Obtém o primeiro resultado (já que você especificou 'itemsPerPage=1')
-    
-#     # Verifica se 'name' e 'population' existem no resultado
-#     if 'name' in resultado and 'population' in resultado:
-#         nome = resultado['name']
-#         populacao = resultado['population']
-        
-#         print(f"Nome: {nome}, População: {populacao}")
-#     else:
-#         print("Campos 'name' e/ou 'population' não encontrados no resultado.")
-# else:
-#     print("Nenhum resultado encontrado.")
+# Traduzindo a frase para o português do Brasil
+tradutor = Translator(to_lang="pt")
+frase_traduzida = tradutor.translate(frase)
+
+# Exibindo a frase traduzida
+print(f'A frase do dia é: {frase_traduzida}')

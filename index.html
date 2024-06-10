@@ -15,11 +15,13 @@
         <section class="temperature-now">
             <div class="location">
                 <div>Previsão do Tempo</div>
-                <img id="image-location" src="./assets/pin.svg" alt="ícone de localização">
-                <input type="text" name="location" placeholder="search" id="location-input">
-                <button onclick="enviar()" type="button">
-                    Buscar
-                </button>
+                <div class="location-container">
+                    <img id="image-location" src="./assets/pin.svg" alt="ícone de localização">
+                    <input type="text" name="location" placeholder="  Cidade" id="location-input">
+                    <button onclick="enviar()" type="button">
+                        Buscar
+                    </button>
+                </div>
             </div>
             <div class="temp">
                 <div class="number">
@@ -29,7 +31,14 @@
                 <div class="description" id="description"></div>
             </div>
 
-<!-- SECTION FOR WATCHE -->
+<!--MENSAGENS-->
+<section class="mensagens">
+    <div class="top svelte-ymtdwp">
+        <div id="frase" class="svelte-ymtdwp">Carregando frase...</div> 
+    </div>
+</section>
+
+<!-- SECTION FOR CLOCK -->
  
         <section class="container-clock" >
             <div class="clock">
@@ -47,17 +56,9 @@
                 <h3 id="ano"></h3>
             </div>
         </section>
-            
-            
-                
-            </div>
-        </section>
-       
-       
-     
     </main>
 
 <script src="./backend.js"></script>
-<script src="./mensagens.js"></script>
+<script src="mensagens.js"></script>
 </body>
 </html>
